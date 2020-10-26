@@ -8,7 +8,7 @@ horizontal, or vertical), wins!
 
 # Requirements
 
-Java openjdk runtime >= 11.0.2 (or equivalent from Oracle).
+Java OpenJDK runtime >= 14.0.2 (or equivalent from Oracle).
 
 # Compilation / running
 
