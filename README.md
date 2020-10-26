@@ -12,8 +12,9 @@ Java openjdk runtime >= 11.0.2 (or equivalent from Oracle).
 
 # Compilation / running
 
-From the root project directory (which contains this `README` file):
-1. `javac src/main/java/TicTacToeGame.java`
-2. `java -cp src/main/java TicTacToeGame`
+This project is built using `Maven >= 3.6.3`.
 
-The expected result is "Hello, world!".
+From the root project directory (which contains this `README` file):
+1. `mvn verify`
+2. `mvn package`
+3. `java -cp  target/tictac-toe-1.0-SNAPSHOT.jar io.github.caitlinrichard.tictactoe.TicTacToeGame`
