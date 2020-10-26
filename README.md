@@ -16,5 +16,4 @@ This project is built using `Maven >= 3.6.3`.
 
 From the root project directory (which contains this `README` file):
 1. `mvn verify`
-2. `mvn package`
-3. `java -cp  target/tictac-toe-1.0-SNAPSHOT.jar io.github.caitlinrichard.tictactoe.TicTacToeGame`
+2. `mvn javafx:run`
