@@ -37,4 +37,4 @@ target/
 .settings
 
 # VS Code
-.vscode
+.vscode/
