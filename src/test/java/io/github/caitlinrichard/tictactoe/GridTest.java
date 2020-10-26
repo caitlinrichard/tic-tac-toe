@@ -16,6 +16,7 @@ public class GridTest
     @Test
     public void makesNewGrid() {
         Grid testGrid = new Grid();
+        assertFalse(testGrid.isGameOver());
         for (int i = 0; i < 9; i++) {
             boolean isOccupied = testGrid.isCellOccupied(i);
             assertFalse(isOccupied);
@@ -43,7 +44,7 @@ public class GridTest
     }
     
     @Test
-    public void testIsGameOver() {
+    public void testIsGameOverX() {
         Grid testGrid = new Grid();
         testGrid.addX(0);
         testGrid.addX(1);
