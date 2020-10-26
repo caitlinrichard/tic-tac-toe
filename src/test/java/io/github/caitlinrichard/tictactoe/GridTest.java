@@ -6,12 +6,12 @@ import static org.junit.Assert.assertTrue;
 import org.junit.Test;
 
 /**
- * Unit test for simple App.
+ * Unit test for Grid class
  */
 public class GridTest 
 {
     /**
-     * Rigorous Test :-)
+     * Grid class tests
      */
     @Test
     public void makesNewGrid() {
