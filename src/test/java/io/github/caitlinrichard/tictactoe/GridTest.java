@@ -25,17 +25,21 @@ public class GridTest
     @Test
     public void testAddX() {
         Grid testGrid = new Grid();
-        testGrid.addX(0);
-        boolean isOccupied = testGrid.isCellOccupied(0);
-        assertTrue(isOccupied);
+        for (int i = 0; i < 9; i++) {
+            testGrid.addX(i);
+            boolean isOccupied = testGrid.isCellOccupied(i);
+            assertTrue(isOccupied);
+        } 
     }
     
     @Test
     public void testAddO() {
         Grid testGrid = new Grid();
-        testGrid.addO(0);
-        boolean isOccupied = testGrid.isCellOccupied(0);
-        assertTrue(isOccupied);
+        for (int i = 0; i < 9; i++) {
+            testGrid.addO(i);
+            boolean isOccupied = testGrid.isCellOccupied(i);
+            assertTrue(isOccupied);
+        }   
     }
     
     @Test
