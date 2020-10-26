@@ -52,4 +52,15 @@ public class GridTest
         boolean isGameDone = testGrid.isGameOver();
         assertTrue(isGameDone);
     }
+    
+    @Test
+    public void testIsGameOverO() {
+        Grid testGrid = new Grid();
+        testGrid.addO(0);
+        testGrid.addO(4);
+        testGrid.addO(8);
+        
+        boolean isGameDone = testGrid.isGameOver();
+        assertTrue(isGameDone);        
+    }
 }
