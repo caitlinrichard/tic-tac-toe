@@ -1,7 +1,7 @@
 package io.github.caitlinrichard.tictactoe;
 
 public class Grid {
-    private int[] gridState = new int[9]; // Holds values for grid cells, 0 = x, 1 = O, -1 = blank
+    private int[] gridState = new int[9]; // Holds values for grid cells, 0 = X, 1 = O, -1 = blank
     
     // Default constructor, initiates blank grid
     public Grid() {
