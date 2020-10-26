@@ -6,7 +6,6 @@ Players alternate placing X's or O's into a 3x3 grid.
 The first player to get 3 of either symbol in a row (diagonal,
 horizontal, or vertical), wins!
 
-
 # Requirements
 
 Java openjdk runtime >= 11.0.2 (or equivalent from Oracle).
