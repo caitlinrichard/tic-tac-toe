@@ -16,4 +16,4 @@ This project is built using `Maven >= 3.6.3`.
 
 From the root project directory (which contains this `README` file):
 1. `mvn verify`
-2. `mvn javafx:run`
+2. `mvn clean javafx:run`
