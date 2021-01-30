@@ -16,6 +16,8 @@ import javafx.scene.layout.HBox;
 import javafx.scene.control.Button;
 import javafx.collections.ObservableList;
 import javafx.scene.Node;
+import javafx.scene.control.Label;
+import javafx.geometry.Insets;
 
 public class TicTacToeGame extends Application {
     @Override
@@ -28,6 +30,9 @@ public class TicTacToeGame extends Application {
         HBox gameGridBox = new HBox();
         HBox controlsBox = new HBox();
         Button restartButton = new Button("Restart");
+        Label turnLabel = new Label("X's turn");
+
+        turnLabel.setPadding(new Insets(5, 5, 5, 5));
 
         gameGridBox.setAlignment(Pos.CENTER);
         controlsBox.setAlignment(Pos.CENTER);
@@ -35,6 +40,7 @@ public class TicTacToeGame extends Application {
         root.getChildren().add(gameGridBox);
         root.getChildren().add(controlsBox);
         controlsBox.getChildren().add(restartButton);
+        controlsBox.getChildren().add(turnLabel);
 
         GridPane ticTacToeGrid = new GridPane();
         ticTacToeGrid.getStyleClass().add("game-grid");
@@ -75,7 +81,8 @@ public class TicTacToeGame extends Application {
                 // On click - set X or Y depending on whose turn it is.
                 pane.setOnMouseReleased(e -> {
                     Text cellText = (Text) pane.getChildren().get(0);
-                    cellText.setText("X"); // TODO: This needs to reflect whoever's turn it is.
+                    cellText.setText("X"); // TODO: Add the character reflecting whose turn it is
+                    turnLabel.setText("Y's turn."); // TODO: Display whoever's turn it is.
                 });
 
                 // Set up style via CSS.
